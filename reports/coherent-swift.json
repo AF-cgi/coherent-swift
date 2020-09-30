@@ -1,8 +1,8 @@
 {
-  "cohesion" : "92.71%",
+  "cohesion" : "93.15%",
   "meets_threshold" : true,
   "minimum_threshold" : "80%",
-  "report_date" : "2020-05-26 15:18:53",
+  "report_date" : "2020-09-30 09:02:35",
   "result" : [
     {
       "cohesion" : "100.00%",
@@ -525,10 +525,10 @@
       "meets_threshold" : false
     },
     {
-      "cohesion" : "70.83%",
+      "cohesion" : "82.27%",
       "definitions" : [
         {
-          "cohesion" : "70.83",
+          "cohesion" : "82.27",
           "methods" : [
             {
               "cohesion" : "50.00",
@@ -537,7 +537,34 @@
               "properties" : [
                 {
                   "keyword" : "let",
-                  "name" : "templateFolder",
+                  "name" : "result",
+                  "propertyType" : "instance"
+                }
+              ]
+            },
+            {
+              "cohesion" : "57.14",
+              "methodType" : "Private",
+              "name" : "doesTemplateExist() -> DoesFileExist ",
+              "properties" : [
+                {
+                  "keyword" : "var",
+                  "name" : "path",
+                  "propertyType" : "instance"
+                },
+                {
+                  "keyword" : "var",
+                  "name" : "exists",
+                  "propertyType" : "instance"
+                },
+                {
+                  "keyword" : "let",
+                  "name" : "libTemplates",
+                  "propertyType" : "instance"
+                },
+                {
+                  "keyword" : "let",
+                  "name" : "localTemplates",
                   "propertyType" : "instance"
                 }
               ]
@@ -573,38 +600,11 @@
         }
       ],
       "filename" : "coherent-swift/Commands/Initializer.swift",
-      "meets_threshold" : false
+      "meets_threshold" : true
     },
     {
       "cohesion" : "82.92%",
       "definitions" : [
-        {
-          "cohesion" : "100.00",
-          "methods" : [
-            {
-              "cohesion" : "100.00",
-              "methodType" : "Public",
-              "name" : "content(_ contentString: String, hasOccuranceOf name: String, numberOfOccasions: Int = 1) -> Bool ",
-              "properties" : [
-                {
-                  "keyword" : "let",
-                  "name" : "range",
-                  "propertyType" : "instance"
-                },
-                {
-                  "keyword" : "let",
-                  "name" : "matches",
-                  "propertyType" : "instance"
-                }
-              ]
-            }
-          ],
-          "name" : "SwiftParser ",
-          "properties" : [
-
-          ],
-          "type" : "Extension"
-        },
         {
           "cohesion" : "65.84",
           "methods" : [
@@ -682,6 +682,33 @@
             }
           ],
           "type" : "Class"
+        },
+        {
+          "cohesion" : "100.00",
+          "methods" : [
+            {
+              "cohesion" : "100.00",
+              "methodType" : "Public",
+              "name" : "content(_ contentString: String, hasOccuranceOf name: String, numberOfOccasions: Int = 1) -> Bool ",
+              "properties" : [
+                {
+                  "keyword" : "let",
+                  "name" : "range",
+                  "propertyType" : "instance"
+                },
+                {
+                  "keyword" : "let",
+                  "name" : "matches",
+                  "propertyType" : "instance"
+                }
+              ]
+            }
+          ],
+          "name" : "SwiftParser ",
+          "properties" : [
+
+          ],
+          "type" : "Extension"
         }
       ],
       "filename" : "coherent-swift/Helpers/Parsers/SwiftParser.swift",
